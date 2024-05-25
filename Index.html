@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MyPortfolio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="resume.pdf" class="resume-icon" download><img src="assets/images/download.png" alt="Download Resume"></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="landing">
+            <div class="left-content">
+                <h1>Hello, I am Richard, a front end developer</h1>
+                <div class="social-icons">
+                    <a href="https://twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://linkedin.com"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com"><img src="assets/images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="center-image">
+                <img src="assets/images/richard.png" alt="Richard">
+            </div>
+            <div class="right-content">
+                <div class="initial">R</div>
+                <div class="basic-icon">
+                    <!-- Add your icon design here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with experience in building responsive and interactive web applications.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="content">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="assets/images/project1.png" alt="Project 1">
+                        <div class="project-info">
+                            <h3>Project 1</h3>
+                            <p>A brief description of the project.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/project2.png" alt="Project 2">
+                        <div class="project-info">
+                            <h3>Project 2</h3>
+                            <p>A brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="content">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="assets/images/html5.png" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/images/css3.png" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/images/js.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
