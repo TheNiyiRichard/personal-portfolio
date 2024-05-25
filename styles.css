@@ -6,15 +6,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-/* Header Styles */
 header {
     background-color: rgb(33, 31, 80);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
 }
 
 nav {
@@ -22,7 +21,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    color: #ffffff;
+}
+
+.logo svg {
+    fill: #ffffff;
+    transition: fill 0.3s;
+}
+
+.logo svg:hover {
+    fill: #ccc;
 }
 
 .nav-links {
@@ -35,52 +42,64 @@ nav {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #f4f4f4;
 }
 
 .resume-icon img {
     width: 32px;
     height: 32px;
+    transition: transform 0.3s;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #fef033;
+.resume-icon img:hover {
+    transform: scale(1.1);
+}
+
+.header-separator {
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 /* Landing Section */
 #landing {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 4rem 2rem;
     background-color: rgb(33, 31, 80);
     color: #ffffff;
+    height: calc(100vh - 80px); /* Adjust based on header height */
 }
 
 .left-content {
     flex: 1;
     text-align: left;
+    margin-top: -3rem; /* Move the content up */
 }
 
 .left-content h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #fef033;
+    margin-bottom: 5rem; /* Increase gap between heading and social icons */
+    color: #ffffff;
 }
 
 .social-icons {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem; /* Increase the gap between social icons */
 }
 
 .social-icons a img {
     width: 32px;
     height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
 }
 
 .center-image {
@@ -90,10 +109,17 @@ nav {
 }
 
 .center-image img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #ffffff; /* Adding a border for highlight */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.center-image img:hover {
+    transform: scale(1.05);
 }
 
 .right-content {
@@ -104,14 +130,14 @@ nav {
 .initial {
     font-size: 5rem;
     font-weight: bold;
-    color: #fef033;
+    color: #ffffff;
     opacity: 0.2;
 }
 
 .basic-icon {
     width: 50px;
     height: 50px;
-    background-color: #fef033;
+    background-color: #ffffff;
     border-radius: 50%;
 }
 
@@ -122,6 +148,11 @@ main {
 
 section {
     margin-bottom: 3rem;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
 }
 
 section h2 {
@@ -133,6 +164,7 @@ section h2 {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Projects Section */
@@ -147,6 +179,12 @@ section h2 {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
@@ -188,6 +226,7 @@ section h2 {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #contact form {
@@ -207,15 +246,16 @@ section h2 {
 }
 
 #contact button {
-    background-color: #fef033;
+    background-color: #ffffff;
     color: rgb(33, 31, 80);
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #contact button:hover {
     background-color: rgb(33, 31, 80);
-    color: #fef033;
+    color: #ffffff;
 }
 
 /* Footer */
@@ -231,6 +271,12 @@ footer {
     #landing {
         flex-direction: column;
         text-align: center;
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .center-image img {
+        width: 200px;
     }
 
     .resume-icon {
